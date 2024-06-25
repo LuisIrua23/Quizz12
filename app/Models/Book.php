@@ -11,6 +11,6 @@ class Book extends Model
 
     public function exemplaries()
     {
-        return $this->belongsToMany('App\Models\Exemplary');
+        return $this->hasMany('App\Models\Exemplary');
     }
 }

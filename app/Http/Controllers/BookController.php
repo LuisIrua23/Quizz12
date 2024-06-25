@@ -14,7 +14,7 @@ class BookController extends Controller
 
     public function listar()
     {
-        $books = Book::orderBy('id','desc')->get();
+        $books = Book::orderBy('id')->get();
         return view('Book.listar', compact('books'));
 
     }
