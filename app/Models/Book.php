@@ -9,8 +9,8 @@ class Book extends Model
 {
     use HasFactory;
 
-    public function users()
+    public function exemplaries()
     {
-        return $this->belongsToMany(User::class);
+        return $this->belongsToMany('App\Models\Exemplary');
     }
 }
